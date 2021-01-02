@@ -9,7 +9,7 @@ if(isset($_GET['arr'])){
    
 $userinfo=json_decode($_GET['arr']);
 //print_r($userinfo);
-$sql="update users set UserName='$userinfo[1]',Email='$userinfo[2]', Address='$userinfo[4]', Image='$userinfo[5]', number='$userinfo[3]' where id=$userinfo[0]";
+$sql="update users set UserName='$userinfo[1]',Email='$userinfo[2]', Address='$userinfo[4]', Image='$userinfo[5]', number='$userinfo[3]', password='$userinfo[6]' where id=$userinfo[0]";
 if ($conn->query($sql))
  {
  echo 'true';

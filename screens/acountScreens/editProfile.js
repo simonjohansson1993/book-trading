@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity,StyleSheet,Image,TextInput,ScrollView} from 'react-native';
+import {View, Text, TouchableOpacity,StyleSheet,Image,TextInput,ScrollView,ToastAndroid} from 'react-native';
 import {  Header } from 'react-native-elements';
 import ImagePicker from 'react-native-image-crop-picker';
 import * as Animatabl from 'react-native-animatable';
@@ -26,11 +26,26 @@ const fall = new Animated.Value(1);
       number:this.props.route.params.data[0].number,
       img:this.props.route.params.data[0].Image,
       isImageupLoaded: false,
+      password:this.props.route.params.data[0].password,
+      conpassword:this.props.route.params.data[0].password,
     }
-   // console.log(props.route.params.data);
+   //console.log(props.route.params.data);
   }
 
    async handelsubmit() {
+     if(
+       this.state.name==''||
+       this.state.email==''||
+       this.state.number==''||
+       this.state.adress=='' )
+       {
+        ToastAndroid.show('Required filed are missing!', ToastAndroid.SHORT);
+        return;
+       }
+       else if(this.state.password!=this.state.conpassword){
+        ToastAndroid.show('Password not matchning!', ToastAndroid.SHORT);
+        return;
+       }
     let img = this.state.img;
     let source = {
       uri: img,
@@ -48,7 +63,8 @@ const fall = new Animated.Value(1);
       this.state.email,
       this.state.number,
       this.state.adress,
-      this.state.img
+      this.state.img,
+      this.state.password,
      
     ]
     arr = JSON.stringify(arr);
@@ -217,7 +233,26 @@ edituserinfo(arr)
        onChangeText={(value)=>this.setState({adress:value})}>
     </TextInput>
     </View>
-    
+    </View>
+    <Text style={{fontSize:18, marginLeft:'5%',marginTop:10,}}>password</Text>
+    <View style={{width:'100%', alignItems:'center', marginBottom:20}}>
+     <View style={{width:'90%', height:50,marginTop:10}}>
+      <TextInput style={styles.textinput} 
+       defaultValue={this.state.password}
+       secureTextEntry={true}
+       onChangeText={(value)=>this.setState({password:value})}>
+    </TextInput>
+    </View>
+    </View>
+    <Text style={{fontSize:18, marginLeft:'5%',marginTop:10,}}>Comfirm password</Text>
+    <View style={{width:'100%', alignItems:'center', marginBottom:20}}>
+     <View style={{width:'90%', height:50,marginTop:10}}>
+      <TextInput style={styles.textinput} 
+       defaultValue={this.state.password}
+       secureTextEntry={true}
+       onChangeText={(value)=>this.setState({conpassword:value})}>
+    </TextInput>
+    </View>
     <View style={{ width: '100%', alignItems: 'center', marginTop: 10, marginBottom: 30 }}>
               <View style={{ width: '90%', flexDirection: 'row', justifyContent: 'space-between' }}>
                 <TouchableOpacity style={{ width: '100%' }}

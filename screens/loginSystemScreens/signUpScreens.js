@@ -72,35 +72,6 @@ export default  function singUp({navigation}){
     
 
      
-
-/*signup.php?
-var request = new XMLHttpRequest();
-        request.onreadystatechange = (e) => {
-          if (request.readyState !== 4) {
-              console.log('ja')
-            return;
-          }
-    
-          if (request.status === 200) {
-            if( request.responseText=='true')
-            {
-                navigation.navigate('LoginScreens');
-              
-            } 
-            else if( request.responseText=='username')
-            {
-             ToastAndroid.show('Username token', ToastAndroid.SHORT);
-             console.log(request.responseText);
-             return;
-            }
-            else if( request.responseText=='email')
-            {
-             ToastAndroid.show('Email is token', ToastAndroid.SHORT);
-             console.log(request.responseText);
-             return;
-            }
-          }
-        }; */
     }
     return(
        <View style={signupstyle.contanier}>
