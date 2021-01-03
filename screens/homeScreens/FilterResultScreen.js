@@ -65,10 +65,10 @@ export default class FilterResultScreen extends Component {
 
                 }
               }}>
-              <Card containerStyle={{ width: 180, height: 260,marginLeft:12 }}>
+               <Card containerStyle={{ width:"45%", height: 260,marginLeft:"2%", }}>
                 <Card.Title>{item.item.BookName}</Card.Title>
                 <Card.Divider />
-                <Image style={{ height: 100, width: 150 }} resizeMode='stretch' source={{ uri: item.item.img }}></Image>
+                <Image style={{ height:"50%", width:"100%"}} resizeMode='stretch' source={{ uri: item.item.img }}></Image>
                 <Text style={{ marginBottom: 5, marginTop: 10 }}>
                   BY: {item.item.Aurthor}.
           </Text>
