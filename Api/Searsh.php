@@ -16,5 +16,5 @@ if ( $result=$conn->query($sql))
         array_push($myarr,$row);
        }
      } 
-
+    }
 echo json_encode($myarr);

@@ -1,10 +1,6 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "books";
-$conn = new mysqli($servername, $username, $password, $dbname);
+require_once 'dbconfig.inc.php';
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
