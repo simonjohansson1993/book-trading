@@ -115,7 +115,7 @@ class Home extends Component {
 
                   }
                 }}>
-                <Card containerStyle={{ width:"45%", height: 260,marginLeft:"2%", }}>
+                <Card containerStyle={{ width:"45%", height:270,marginLeft:"2%", }}>
                   <Card.Title>{item.item.BookName}</Card.Title>
                   <Card.Divider />
                   <Image style={{ height:"50%", width:"100%" }} resizeMode='stretch' source={{ uri: item.item.img }}></Image>
