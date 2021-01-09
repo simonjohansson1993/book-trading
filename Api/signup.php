@@ -29,7 +29,7 @@ if(isset($_GET['uname'])&&isset($_GET['psw'])&&isset($_GET['email']))
         }
     }
 
-$sql ="insert into users values(null,'$uname','$email','$psw','','https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png')";
+$sql ="insert into users values(null,'$uname','$email','$psw','','https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png','')";
 if ($conn->query($sql))
 {
     echo "true";

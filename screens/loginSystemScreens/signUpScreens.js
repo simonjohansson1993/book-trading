@@ -64,6 +64,9 @@ export default  function singUp({navigation}){
              console.log(request.responseText);
              return;
             }
+            else{
+                console.log(request.responseText);
+            }
           }
         };
     
