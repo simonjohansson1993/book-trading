@@ -78,7 +78,7 @@ class SearchScreen extends Component {
           }
           else{
             return(
-              <View>
+              <View style={{justifyContent:'center',alignItems:'center', marginTop:'30%'}}>
               <Image
                    style={styles.Image}
                   source={require('../../img/NoSearchResult.png')} />
@@ -119,13 +119,11 @@ class SearchScreen extends Component {
    Image:{
     height:200,
     width:200,
-    marginLeft:110,
-    marginTop:150,
+ 
      },
      text:{
        fontSize:24,
-       marginLeft:140,
-       marginTop:30,
+ 
        color:'gray',
        fontWeight: "bold",
      }
@@ -134,4 +132,3 @@ class SearchScreen extends Component {
   
   
   export default SearchScreen
-    

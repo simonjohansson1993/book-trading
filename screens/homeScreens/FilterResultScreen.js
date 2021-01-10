@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, StatusBar,Image,ScrollView,TouchableOpacity,FlatList,TouchableWithoutFeedback, } from 'react-native';
+import { View, Text, StyleSheet, StatusBar,Image,ScrollView,TouchableOpacity,FlatList,TouchableWithoutFeedback,SafeAreaView } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Card  } from 'react-native-elements';
@@ -85,7 +85,7 @@ export default class FilterResultScreen extends Component {
     }
     else{
       return(
-        <View>
+        <View style={{justifyContent:'center',alignItems:'center', marginTop:'10%'}}>
         <Image
              style={styles.Image}
             source={require('../../img/NoSearchResult.png')} />
@@ -146,7 +146,7 @@ export default class FilterResultScreen extends Component {
               </View>
          </View>
         
-   
+             
               <View style={{flexDirection: 'row-reverse'}}>
               <View style={styles. FilterBox}>
               <ScrollView>
@@ -162,8 +162,11 @@ export default class FilterResultScreen extends Component {
                     onPress={()=>this.props.navigation.navigate('Home')}
                     />  
               </View>
+           
               </View>
+            
               {this.selectedComponent()}
+             
        </View>
   );
 }
@@ -196,7 +199,7 @@ const styles = StyleSheet.create({
   height:100,
   width:'80%',
   marginTop:10,
-  marginRight:15,
+  marginRight:13,
   backgroundColor:'#DDDCDC',
   paddingTop:10,
  },
@@ -214,7 +217,7 @@ const styles = StyleSheet.create({
  },
  FilterExit:{
   height:100,
-  width:'12%',
+  width:'14%',
   marginTop:10,
   marginLeft:'5%',
   backgroundColor:'#DDDCDC',
@@ -222,13 +225,11 @@ const styles = StyleSheet.create({
  Image:{
 height:200,
 width:200,
-marginLeft:110,
-marginTop:100,
+
  },
  text:{
    fontSize:24,
-   marginLeft:140,
-   marginTop:30,
+ 
    color:'gray',
    fontWeight: "bold",
  }

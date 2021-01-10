@@ -31,7 +31,7 @@ export default function Splash({navigation}){
                 duration={3000}>
                     <View style={{flex:1}}>
                         <View style={styles.textContainer}>
-                        <Text style={styles.text}>Welcome to <Text style={{color:'#08d4c4' ,fontFamily:'Menlo-Bold'}}> Book worm </Text>App !</Text>
+                        <Text style={styles.text}>Welcome to <Text style={{color:'#08d4c4' ,fontFamily:'Menlo-Bold'}}> Bookworm </Text>App !</Text>
                         </View>
                       
                     </View>
