@@ -91,7 +91,7 @@ export default  function singUp({navigation}){
                    
                    <Text style={{color:'black',fontSize:20,}}>User name</Text>
                     <View style={signupstyle.email}>
-                        <MaterialCommunityIcons style={{ marginRight: 0, paddingTop: 10 }} name="email" color={'rgba(0,0,0,0.5)'} size={34} />
+                        <MaterialCommunityIcons style={{ marginRight: 0, paddingTop: 10 }} name="rename-box" color={'rgba(0,0,0,0.5)'} size={34} />
                 
                 
                         <TextInput placeholder={'Enter your name'} 
