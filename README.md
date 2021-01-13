@@ -1,5 +1,5 @@
 ﻿# Book-trading System
-  - A book trading aplication to assist book lovers to find and buy new interesting books with features like messaging users,personalized profiles and login systen attached.
+  - A book trading application to assist book lovers to find and buy new interesting books with features like messaging users,personalized profiles and login systen attached.
  
  ## Software Requirements
 - Node JS
