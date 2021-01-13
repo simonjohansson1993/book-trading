@@ -17,8 +17,9 @@
 -If u have problems with react native install so watch this video and follow it:
  https://www.youtube.com/watch?v=F7xdbsjFGtU&feature=youtu.be
 -If u have a problem with running the code so try to run the following commands in the terminal:
-1- npm install
-2- yarn add react-native-safe-area-context
-3- react-native run-android.
+
+- npm install
+- yarn add react-native-safe-area-context
+- react-native run-android.
 
 
