@@ -1,5 +1,15 @@
-﻿# book-trading
+﻿# book-trading System
+  - A book trading aplication to assist book lovers to find and buy new interesting books with features like messaging users,personalized profiles and login systen attached.
  
+ ## Software Requirements
+ Node JS
+ JDK
+ Android studio
+ React Native CLI
+ YARN Package Manager
+ Visual Studio Code
+ 
+ ## Get started
 - Make sure that u have a running server (u can install xampp control panel and start Apache and Mysql).
 - In xampp folder you can find the folder htdocs so, into this folder Add folder Api. 
 - you can find the folder Api into the project folder.
@@ -10,3 +20,5 @@
 1- npm install
 2- yarn add react-native-safe-area-context
 3- react-native run-android.
+
+
